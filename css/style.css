@@ -63,7 +63,7 @@
 
 .card-content a:hover {color: #000000;}
 
-#work, #team{background: rgb(247, 247, 247);}
+#work, #team, #mediadict, #fixcar{background: rgb(247, 247, 247);}
 
 .text_pink{color:#EF9A9A;}
 
@@ -275,7 +275,7 @@ footer.page-footer {
     position: relative;
     border-radius: 50%;
     overflow: hidden;
-    margin-left:4%;
+    margin:auto;
 }
 
 .donut-chart .slice {
@@ -324,7 +324,7 @@ footer.page-footer {
 
 .donut-chart.htmlcss .slice.two {
     clip: rect(0px, 75px, 150px, 0px);
-    transform: rotate(342deg);
+    transform: rotate(324deg);
     background: none repeat scroll 0% 0% #48B2C1;
 }
 
@@ -336,7 +336,7 @@ footer.page-footer {
 
 .donut-chart.js .slice.two {
     clip: rect(0px, 75px, 150px, 0px);
-    transform: rotate(324deg);
+    transform: rotate(306deg);
     background: none repeat scroll 0% 0% #48B2C1;
 }
 
@@ -347,18 +347,6 @@ footer.page-footer {
 }
 
 .donut-chart.python .slice.two {
-    clip: rect(0px, 75px, 150px, 0px);
-    transform: rotate(306deg);
-    background: none repeat scroll 0% 0% #48B2C1;
-}
-
-.donut-chart.ce .slice.one {
-    clip: rect(0px, 150px, 75px, 0px);
-    transform: rotate(90deg);
-    background: none repeat scroll 0% 0% #48B2C1;
-}
-
-.donut-chart.ce .slice.two {
     clip: rect(0px, 75px, 150px, 0px);
     transform: rotate(324deg);
     background: none repeat scroll 0% 0% #48B2C1;
@@ -372,7 +360,7 @@ footer.page-footer {
 
 .donut-chart.software .slice.two {
     clip: rect(0px, 75px, 150px, 0px);
-    transform: rotate(306deg);
+    transform: rotate(288deg);
     background: none repeat scroll 0% 0% #48B2C1;
 }
 
@@ -384,7 +372,19 @@ footer.page-footer {
 
 .donut-chart.webapp .slice.two {
     clip: rect(0px, 75px, 150px, 0px);
-    transform: rotate(288deg);
+    transform: rotate(270deg);
+    background: none repeat scroll 0% 0% #48B2C1;
+}
+
+.donut-chart.ce .slice.one {
+    clip: rect(0px, 150px, 75px, 0px);
+    transform: rotate(90deg);
+    background: none repeat scroll 0% 0% #48B2C1;
+}
+
+.donut-chart.ce .slice.two {
+    clip: rect(0px, 75px, 150px, 0px);
+    transform: rotate(342deg);
     background: none repeat scroll 0% 0% #48B2C1;
 }
 
@@ -396,6 +396,17 @@ footer.page-footer {
 
 .donut-chart.comm .slice.two {
     clip: rect(0px, 75px, 150px, 0px);
-    transform: rotate(324deg);
+    transform: rotate(252deg);
+    background: none repeat scroll 0% 0% #48B2C1;
+}
+.donut-chart.sa .slice.one {
+    clip: rect(0px, 150px, 75px, 0px);
+    transform: rotate(90deg);
+    background: none repeat scroll 0% 0% #48B2C1;
+}
+
+.donut-chart.sa .slice.two {
+    clip: rect(0px, 75px, 150px, 0px);
+    transform: rotate(252deg);
     background: none repeat scroll 0% 0% #48B2C1;
 }

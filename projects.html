@@ -28,22 +28,16 @@
     <nav id="nav_f" class="default_color" role="navigation">
         <div class="container">
             <div class="nav-wrapper">
-            <a href="#" id="logo-container" class="brand-logo">Yatna Verma</a>
+            <a href="index.html" id="logo-container" class="brand-logo">Yatna Verma</a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#intro">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="opensource.html">Open Source</a></li>
-                    <!-- <li><a href="http://yatna.pythonanywhere.com/">Blog</a></li> -->
+                    <li><a href="projects.html" style="color:aqua">Projects</a></li>
+                    <li><a href="opensource.html">Open Source Contributions</a></li>
+                    <li><a href="#contact">Resume</a></li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#intro">About</a></li>
-                    <li><a href="#work">Work</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="opensource.html">Open Source</a></li>
-                    <!-- <li><a href="http://yatna.pythonanywhere.com/">Blog</a></li> -->
+                    <li><a href="opensource.html">Open Source Contributions</a></li>
+                    <li><a href="#contact">Resume</a></li>
                 </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             </div>
@@ -52,35 +46,67 @@
 </div>
 
 <!--Intro and service-->
-<div id="intro" class="section scrollspy">
+<div id="intro" class="section scrollspy" id="ngram">
     <div class="container">
-        <h4 class="header">N-Gram Word Predictor </h4><br>
+        <h5 class="header"><b>N-Gram Word Predictor</b></h5><br>
             <div  class="col s12">  
-                <img class="img-thumbnail"src="img/ngram.png" style="width:60%">              
-                <p class="center">I am a B.Tech student from Indian Institute of Technology, Varanasi who loves software and android-app developments. I am a huge Open Source Enthusiast and love to contribute in open source project. I like to find solutions to real life problems using technology.</p>   
+                <img class="img-thumbnail"src="img/ngram.png" style="width:50%">              
+                <p><b>Problem Addressed - </b> Around the world, people are spending more and more time on mobile deivces for email, social networking, and a bunch of other activities. However, typing on these devices is painful and time consuming. The solutions aims to improve typing experiance by providing automtic next word prediction..</p>
+                <p><b>Solution - </b> A next word prediction algorithm using n-gram model with <a href="http://www.cs.columbia.edu/~smaskey/CS6998-0412/supportmaterial/langmodel_mapreduce.pdf">'Stupid Backoff'.</a> The algo checks if highest order n-gram (n=5) is seen, if not, it falls back to lower order n-grams.</p>   
             </div>
     </div>
 </div>
 
 <!--Work-->
-<div class="section scrollspy" id="work">
+<div class="section scrollspy" id="fixcar">
     <div class="container">
-        <h4 class="header">Automobile Service App </h4><br>
+        <h5 class="header"><b>Fix-My-Car</b> </h5><br>
             <div  class="col s12">  
-                <img class="img-thumbnail"src="img/auto.png" style="width:85%">              
-                <p class="center">I am a B.Tech student from Indian Institute of Technology, Varanasi who loves software and android-app developments. I am a huge Open Source Enthusiast and love to contribute in open source project. I like to find solutions to real life problems using technology.</p>   
+                <img class="img-thumbnail"src="img/auto.png" style="width:80%">              
+                <p><b>Problem Addressed - </b> With more and more people owning cars in India, servicing and repair is becoming a hectic job for the vehical owners. They need to find suitable service center, drop and pick their vehical and in the process commute back using public transport.</p>
+                <p><b>Solution - </b> An android application where users can specify their vehical details and accordingly select the services required and make payments. These requests are collected on a remote server which assigns them to the suitable service center, from where, a service person can pick-service/repair-return the vehical. </p>   
             </div>
     </div>
 </div>
 
 <!--expertise-->
-<div class="section scrollspy" id="expertise">
+<div class="section scrollspy" id="enron">
     <div class="container">
-        <h4 class="header"> 9 X 9 Tic Tac Toe </h4><br>
+        <h5 class="header"> <b>Fraud Detection (Enron Corpus) </b></h5><br>
+            <div  class="col s12">  
+                <img class="img-thumbnail"src="img/enron.png" style=" width:35%">             
+                <p><b>Background - </b> Enron Corporation, an energy and services company infamously went bankrupt in December 2001 as a result of fraudulent business practices. Thereafter, the Federal Energy Regulatory Commission released more than 1.6 million emails sent and received by Enron executives in the years from 2000–2002. This dataset has become a valuable training and testing ground for machine learning practicioners to try and develop models that can identify the persons of interests (POIs) from the features within the data.</p>
+                <p><b>Solution - </b> The task is a full-fledged ML problem. It requires all steps from cleaning, visualizing and analyzing raw data to making apt feature selections and choosing the best fitting ML algorithm. It then requires optimising the algorithm and interpreting/validating the obtained results.</p> 
+            </div>
+    </div>
+</div>
+
+
+<!--expertise-->
+<div class="section scrollspy" id="mediadict">
+    <div class="container">
+        <h5 class="header"> <b>MediaDict</b> </h5><br>
+            <div  class="col s12">  
+                <img class="img-thumbnail"src="img/md.jpg" style=" width:22%">             
+                <p><b>Problem Addressed - </b> Music apps are getting boring. Well, they do let us play our favourite songs, but, they are capable of providing many more interesting features.</p>
+                <ul><b>Solution - </b>
+                    <li>- A music player which not only plays songs but also provides you with the latest news about the music artists you follow. The app fetches relevant news of followed artists from various third party news provider APIs.</li>
+                    <li>- It provides an interesting weather-location based song suggestions, using GPS and weather of the user's location and a curated mapping.</li>
+                    <li>- Going beyond the definition of a music player, It also allows people to rate songs, movies and tv series.</li>
+                </ul>  
+            </div>
+    </div>
+</div>
+
+<!--expertise-->
+<div class="section scrollspy" id="ttt">
+    <div class="container">
+        <h5 class="header"> <b>9 X 9 Tic Tac Toe</b> </h5><br>
             <div  class="col s12">  
                 <img class="img-thumbnail"src="img/ttt.jpg" style=" width:20%"> 
-                <img class="img-thumbnail"src="img/tss.png" style="margin-left:10%;width:60%">              
-                <p class="center">I am a B.Tech student from Indian Institute of Technology, Varanasi who loves software and android-app developments. I am a huge Open Source Enthusiast and love to contribute in open source project. I like to find solutions to real life problems using technology.</p>   
+                <img class="img-thumbnail"src="img/tss.png" style="margin-left:10%;width:55%">              
+                <p><b>Background - </b> This computer vs human game is an interpolation of the classic 3X3 Tic Tac Toe with a larger 3X3 TicTacToe having smaller 3X3 TicTacToe in each of its 9 cells. An additional rule that a person can make a move only in the cell of the bigger TicTactoe which corresponds to the cell of the smaller TicTacToe where his opponent made his move (previous move). </p>
+                <p><b>Solution - </b> The computer uses a recursive approach to make an optimal move by predicting the next move of the user and trying out different combinations. The difficulty can be increased or decreased. In a higher difficulty the computer will predict up to 3 or larger sequence of moves of the second player. In easy mode, it would try to guess only the next move.</p> 
             </div>
     </div>
 </div>
